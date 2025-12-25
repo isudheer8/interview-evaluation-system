@@ -1,0 +1,12 @@
+system:
+  name: "Hybrid Interview Evaluation System"
+  version: "0.1.0"
+  execution_mode: "text_only"   # text_only | audio_text | full_multimodal
+
+logging:
+  level: "INFO"
+  save_logs: false
+
+privacy:
+  store_responses: false
+  anonymize_user: true

@@ -1,0 +1,28 @@
+execution:
+  mode: "text_only"
+
+modules:
+  dsp:
+    enabled: false
+
+  asr:
+    enabled: false
+
+  semantic_scorer:
+    enabled: true
+    model: "all-MiniLM-L6-v2"
+
+  concept_scorer:
+    enabled: true
+    method: "regex"
+
+  retriever:
+    enabled: true
+    type: "faiss"
+    top_k: 5
+
+  generator:
+    enabled: false
+
+fusion:
+  engine: "weighted"

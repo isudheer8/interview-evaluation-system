@@ -1,0 +1,30 @@
+execution:
+  mode: "multimodal_stub"
+
+modules:
+  dsp:
+    enabled: true
+    implementation: "stub"
+
+  asr:
+    enabled: true
+    implementation: "stub"
+
+  semantic_scorer:
+    enabled: true
+    model: "all-MiniLM-L6-v2"
+
+  concept_scorer:
+    enabled: true
+    method: "regex"
+
+  retriever:
+    enabled: true
+    type: "faiss"
+    top_k: 5
+
+  generator:
+    enabled: false
+
+fusion:
+  engine: "weighted"

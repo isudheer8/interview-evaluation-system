@@ -1,0 +1,9 @@
+fusion_weights:
+  semantic: 0.60
+  keyword: 0.25
+  evidence: 0.15
+
+verdict_thresholds:
+  excellent: 8.0
+  good: 6.0
+  fair: 4.0

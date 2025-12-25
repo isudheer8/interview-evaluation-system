@@ -1,0 +1,22 @@
+{
+  "signals_systems_oppenheim.pdf": {
+    "book_name": "Signals and Systems",
+    "authors": "Oppenheim & Willsky",
+    "domain": "Signals and Systems"
+  },
+  "analog_electronics_sedra.pdf": {
+    "book_name": "Microelectronic Circuits",
+    "authors": "Sedra & Smith",
+    "domain": "Analog Electronics"
+  },
+  "control_systems_ogata.pdf": {
+    "book_name": "Modern Control Engineering",
+    "authors": "Ogata",
+    "domain": "Control Systems"
+  },
+  "communication_systems_haykin.pdf": {
+    "book_name": "Communication Systems",
+    "authors": "Simon Haykin",
+    "domain": "Communication Systems"
+  }
+}

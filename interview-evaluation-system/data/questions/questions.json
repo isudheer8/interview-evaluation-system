@@ -1,0 +1,343 @@
+[
+  {
+    "question_id": "ECE_SNS_01",
+    "topic": "Signals and Systems",
+    "subtopic": "Fourier Transform",
+    "difficulty": "Medium",
+    "question_text": "Explain the significance of the Fourier Transform in signal analysis.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "The Fourier Transform converts a signal from the time domain to the frequency domain, enabling analysis of spectral components and system behavior.",
+        "key_concepts": [
+          { "concept": "time domain", "mandatory": true },
+          { "concept": "frequency domain", "mandatory": true },
+          { "concept": "spectral components", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.25 }, "evidence": { "enabled": true, "weight": 0.15 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Oppenheim & Willsky", "reference_ids": ["FT_CH3"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 180, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_SNS_02",
+    "topic": "Signals and Systems",
+    "subtopic": "Sampling Theorem",
+    "difficulty": "Easy",
+    "question_text": "State the Nyquist sampling theorem.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "The Nyquist theorem states that a signal must be sampled at least twice its highest frequency to allow perfect reconstruction.",
+        "key_concepts": [
+          { "concept": "sampling", "mandatory": true },
+          { "concept": "nyquist rate", "mandatory": true },
+          { "concept": "perfect reconstruction", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.65 }, "keyword": { "enabled": true, "weight": 0.35 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Oppenheim & Willsky", "reference_ids": ["SAMPLING_CH4"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 120, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_AE_01",
+    "topic": "Analog Electronics",
+    "subtopic": "BJT",
+    "difficulty": "Medium",
+    "question_text": "Explain the operation of a BJT in active region.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "In the active region, the emitter-base junction is forward biased and the collector-base junction is reverse biased, allowing amplification.",
+        "key_concepts": [
+          { "concept": "forward biased", "mandatory": true },
+          { "concept": "reverse biased", "mandatory": true },
+          { "concept": "amplification", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": true, "weight": 0.1 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Sedra & Smith", "reference_ids": ["BJT_CH5"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 180, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_DE_01",
+    "topic": "Digital Electronics",
+    "subtopic": "Logic Gates",
+    "difficulty": "Easy",
+    "question_text": "What is a universal gate? Give examples.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "A universal gate is a logic gate that can be used to implement any Boolean function. NAND and NOR are universal gates.",
+        "key_concepts": [
+          { "concept": "boolean function", "mandatory": true },
+          { "concept": "nand", "mandatory": true },
+          { "concept": "nor", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.7 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "lecture_notes", "source_name": "Digital Logic", "reference_ids": ["LOGIC_GATES"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 90, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_CS_01",
+    "topic": "Control Systems",
+    "subtopic": "Feedback",
+    "difficulty": "Medium",
+    "question_text": "What is the significance of feedback in control systems?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "Feedback improves system stability, accuracy, and reduces sensitivity to parameter variations.",
+        "key_concepts": [
+          { "concept": "stability", "mandatory": true },
+          { "concept": "accuracy", "mandatory": true },
+          { "concept": "parameter variation", "mandatory": false }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.25 }, "evidence": { "enabled": true, "weight": 0.15 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Ogata", "reference_ids": ["FEEDBACK_CH2"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 180, "created_by": "faculty", "version": "1.0" }
+  },
+
+
+  {
+    "question_id": "ECE_SNS_03",
+    "topic": "Signals and Systems",
+    "subtopic": "LTI Systems",
+    "difficulty": "Medium",
+    "question_text": "Define a linear time-invariant (LTI) system.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "An LTI system is a system that satisfies the properties of linearity and time invariance, meaning its response to inputs is predictable and does not change with time.",
+        "key_concepts": [
+          { "concept": "linearity", "mandatory": true },
+          { "concept": "time invariance", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.65 }, "keyword": { "enabled": true, "weight": 0.35 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Oppenheim & Willsky", "reference_ids": ["LTI_CH2"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 120, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_SNS_04",
+    "topic": "Signals and Systems",
+    "subtopic": "Convolution",
+    "difficulty": "Hard",
+    "question_text": "Explain the concept of convolution in continuous-time systems.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "Convolution is a mathematical operation used to determine the output of an LTI system by integrating the product of the input signal and the time-reversed impulse response.",
+        "key_concepts": [
+          { "concept": "impulse response", "mandatory": true },
+          { "concept": "time reversal", "mandatory": true },
+          { "concept": "integration", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.25 }, "evidence": { "enabled": true, "weight": 0.15 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Oppenheim & Willsky", "reference_ids": ["CONV_CH2"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 240, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_AE_02",
+    "topic": "Analog Electronics",
+    "subtopic": "MOSFET",
+    "difficulty": "Medium",
+    "question_text": "Explain the operation of an n-channel MOSFET.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "An n-channel MOSFET operates by forming a conductive channel between drain and source when a positive gate-to-source voltage exceeds the threshold voltage.",
+        "key_concepts": [
+          { "concept": "threshold voltage", "mandatory": true },
+          { "concept": "conductive channel", "mandatory": true },
+          { "concept": "gate voltage", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": true, "weight": 0.1 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Sedra & Smith", "reference_ids": ["MOSFET_CH4"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 180, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_AE_03",
+    "topic": "Analog Electronics",
+    "subtopic": "Amplifiers",
+    "difficulty": "Medium",
+    "question_text": "What is the purpose of a voltage amplifier?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "A voltage amplifier increases the amplitude of an input voltage signal while maintaining the waveform shape.",
+        "key_concepts": [
+          { "concept": "voltage gain", "mandatory": true },
+          { "concept": "signal amplitude", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.7 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "lecture_notes", "source_name": "Analog Circuits", "reference_ids": ["AMPLIFIER"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 120, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_DE_02",
+    "topic": "Digital Electronics",
+    "subtopic": "Flip-Flops",
+    "difficulty": "Medium",
+    "question_text": "What is the function of a flip-flop?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "A flip-flop is a bistable device used to store one bit of information and is commonly used in sequential circuits.",
+        "key_concepts": [
+          { "concept": "bistable", "mandatory": true },
+          { "concept": "memory element", "mandatory": true },
+          { "concept": "sequential circuits", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.65 }, "keyword": { "enabled": true, "weight": 0.35 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Morris Mano", "reference_ids": ["FF_CH6"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 120, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_DE_03",
+    "topic": "Digital Electronics",
+    "subtopic": "Counters",
+    "difficulty": "Hard",
+    "question_text": "Explain the working of a synchronous counter.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "In a synchronous counter, all flip-flops are triggered simultaneously by a common clock signal, ensuring faster and predictable operation.",
+        "key_concepts": [
+          { "concept": "common clock", "mandatory": true },
+          { "concept": "flip-flops", "mandatory": true },
+          { "concept": "synchronous operation", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.25 }, "evidence": { "enabled": true, "weight": 0.15 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Morris Mano", "reference_ids": ["COUNTERS_CH7"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 240, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_CS_02",
+    "topic": "Control Systems",
+    "subtopic": "Transfer Function",
+    "difficulty": "Medium",
+    "question_text": "Define the transfer function of a control system.",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "The transfer function is the ratio of the Laplace transform of the output to the input of a system, assuming zero initial conditions.",
+        "key_concepts": [
+          { "concept": "laplace transform", "mandatory": true },
+          { "concept": "zero initial conditions", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.65 }, "keyword": { "enabled": true, "weight": 0.35 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Ogata", "reference_ids": ["TF_CH3"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 120, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_CS_03",
+    "topic": "Control Systems",
+    "subtopic": "Stability",
+    "difficulty": "Hard",
+    "question_text": "What is stability in control systems?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "A control system is said to be stable if its output remains bounded for a bounded input.",
+        "key_concepts": [
+          { "concept": "bounded input", "mandatory": true },
+          { "concept": "bounded output", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.25 }, "evidence": { "enabled": true, "weight": 0.15 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Ogata", "reference_ids": ["STABILITY_CH4"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 240, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_COM_01",
+    "topic": "Communication Systems",
+    "subtopic": "Modulation",
+    "difficulty": "Medium",
+    "question_text": "What is modulation and why is it required?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "Modulation is the process of varying a carrier signal with the information signal to enable efficient transmission over long distances.",
+        "key_concepts": [
+          { "concept": "carrier signal", "mandatory": true },
+          { "concept": "information signal", "mandatory": true },
+          { "concept": "transmission", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.6 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": true, "weight": 0.1 } },
+    "rag_references": { "source_type": "textbook", "source_name": "Simon Haykin", "reference_ids": ["MOD_CH3"] },
+    "metadata": { "course": "ECE", "marks": 10, "time_limit_sec": 180, "created_by": "faculty", "version": "1.0" }
+  },
+
+  {
+    "question_id": "ECE_COM_02",
+    "topic": "Communication Systems",
+    "subtopic": "Noise",
+    "difficulty": "Easy",
+    "question_text": "What is noise in communication systems?",
+    "ideal_answers": [
+      {
+        "answer_id": "A1",
+        "text": "Noise is any unwanted disturbance that affects a signal during transmission and degrades the quality of communication.",
+        "key_concepts": [
+          { "concept": "unwanted disturbance", "mandatory": true },
+          { "concept": "signal degradation", "mandatory": true }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "evaluation": { "semantic": { "enabled": true, "weight": 0.7 }, "keyword": { "enabled": true, "weight": 0.3 }, "evidence": { "enabled": false, "weight": 0.0 } },
+    "rag_references": { "source_type": "lecture_notes", "source_name": "Communication Theory", "reference_ids": ["NOISE"] },
+    "metadata": { "course": "ECE", "marks": 5, "time_limit_sec": 90, "created_by": "faculty", "version": "1.0" }
+  }
+]
+
