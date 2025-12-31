@@ -1,0 +1,11 @@
+question_id,student_answer,human_score
+ECE_SNS_01,"The Fourier Transform converts a time-domain signal into its frequency components, helping analyze spectral characteristics and system behavior.",8.5
+ECE_SNS_01,"Fourier transform is used to change signals into frequency domain representation.",6.5
+ECE_AE_01,"In the active region of a BJT, the base-emitter junction is forward biased and the collector-base junction is reverse biased.",7.5
+ECE_AE_01,"A BJT works by amplifying current when the emitter and base junction conducts.",5.5
+ECE_CS_01,"Feedback improves system stability and reduces steady-state error in control systems.",8.0
+ECE_CS_01,"Feedback is used to control the output of a system.",5.0
+ECE_COM_01,"Amplitude modulation varies the amplitude of the carrier signal according to the message signal.",7.5
+ECE_COM_01,"In AM, the carrier amplitude changes based on the information signal.",6.0
+ECE_DE_01,"A universal gate is a logic gate, such as NAND or NOR, that can be used to implement any other Boolean function without requiring any other gate types.",8.5
+ECE_DE_01,"A universal gate is a logic gate like NAND or NOR that is universal because it can build every other type of gate on its own.",5.5

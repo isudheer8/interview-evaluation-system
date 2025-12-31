@@ -1,0 +1,36 @@
+
+---
+
+# 📄 `requirements.txt`
+
+This list includes **only what is actually used or imported**.
+
+```txt
+# Core
+python>=3.10
+
+# Backend
+fastapi
+uvicorn
+pydantic
+
+# Frontend
+streamlit
+requests
+
+# Machine Learning & NLP
+sentence-transformers
+transformers
+faiss-cpu
+
+# Audio Processing
+librosa
+numpy
+scipy
+
+# ASR
+faster-whisper
+
+# Utilities
+tqdm
+scikit-learn
