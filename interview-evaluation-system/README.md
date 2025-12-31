@@ -32,23 +32,19 @@ The system is designed for **academic interview evaluation**, prioritizing **det
 ---
 
 ## 3. System Architecture (High-Level)
-Audio/Text Input
-↓
-DSP (Audio only)
-↓
-ASR (Audio only)
-↓
-Text Processing
-↓
-SLM Semantic Scorer (SBERT)
-↓
-Keyword / Concept Scorer
-↓
-RAG Retriever (FAISS)
-↓
-Weighted Fusion Engine
-↓
-Final Score + Verdict + Evidence
+
+The system follows a modular pipeline architecture designed to transform raw student input into a multi-dimensional score:
+
+1.  **Ingestion Layer**: Receives raw audio (WAV/MP3) or text.
+2.  **Processing Layer**: 
+    - **DSP Module**: Noise reduction and feature extraction (Pitch/Intensity).
+    - **ASR Module**: Whisper-based transcription of audio to text.
+3.  **Analysis Layer (The Scoring Triad)**:
+    - **Semantic Scorer**: Uses SBERT to compare student intent vs. ideal answers.
+    - **Concept Scorer**: Regex-based verification of technical keyword density.
+    - **RAG Scorer**: FAISS-based retrieval from textbooks to verify factual grounding.
+4.  **Fusion Layer**: A weighted engine that combines signals into a final 0.0–10.0 score.
+5.  **Presentation Layer**: Streamlit UI for real-time feedback.
 ---
 
 ## 4. Technology Stack
@@ -76,55 +72,61 @@ Final Score + Verdict + Evidence
 
 ## 5. Folder Structure
 
-
+```
 interview-evaluation-system/
 │
-├── api/ # FastAPI backend
-├── core/ # Core ML, DSP, RAG, orchestration logic
-├── data/ # Questions, corpus, embeddings, samples
-├── frontend/ # Streamlit UI
-├── experiments/ # Offline evaluation & metrics
-├── tests/ # Unit tests
-├── scripts/ # Utility scripts
-├── README.md
-└── requirements.txt
-
+├── api/             # FastAPI backend (Routes & Main entry)
+├── core/            # Core ML, DSP, RAG, and Orchestration logic
+├── data/            # Questions, corpus chunks, FAISS indices, and samples
+├── frontend/        # Streamlit UI implementation
+├── experiments/     # Offline evaluation & system validation metrics
+├── tests/           # Unit tests for core components
+├── scripts/         # Utility scripts (Indexing, Data Cleaning)
+├── README.md        # Project documentation
+└── requirements.txt # Python dependencies
+```
 
 ---
 
 ## 6. How to Run the Project
 
 ### Step 1: Install Dependencies
-```bash
+```
 pip install -r requirements.txt
-
+```
 
 ### Step 2: Start the Backend (FastAPI)
+```
 uvicorn api.main:app --reload
-
+```
 
 Backend runs at:
-
+```
 http://127.0.0.1:8000
-
+```
 ### Step 3: Start the Frontend (Streamlit)
-
+```
 streamlit run frontend/streamlit_app.py
-
+```
 
 ## 7. Evaluation Metrics (Offline)
 
-- The system is validated using offline evaluation:
-- Pearson correlation between system scores and human scores
-- Mean Absolute Error (MAE)
-- Ablation study:
-- Semantic-only
-- Keyword-only
-- Semantic + Keyword (proposed system)
+The system is rigorously validated using an offline evaluation suite to ensure alignment between AI grading and human expert benchmarks.
 
-- Metrics are computed via:
-experiments/evaluation/metrics.py
+### Statistical Validation
+We utilize two primary metrics to quantify system performance:
 
+| Metric | Purpose | Target |
+| :--- | :--- | :--- |
+| **Pearson Correlation** | Measures the linear relationship between system scores and human scores. | $> 0.7$ |
+| **Mean Absolute Error (MAE)** | Measures the average magnitude of error in the predicted scores. | $< 1.5$ |
+
+
+### Running Evaluation
+Metrics are computed and reported via the dedicated evaluation script:
+```
+python -m experiments.evaluation.metrics
+```
 
 ## 8. Design Decisions
 
